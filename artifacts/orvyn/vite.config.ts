@@ -3,7 +3,9 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 
-const workspaceRoot = path.resolve(__dirname, "../..");
+// import.meta.dirname is available in Node 21.2+ (ESM-safe replacement for __dirname)
+const __dir = import.meta.dirname;
+const workspaceRoot = path.resolve(__dir, "../..");
 
 export default defineConfig({
   root: workspaceRoot,
@@ -15,7 +17,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: path.resolve(__dirname, "dist/public"),
+    outDir: path.resolve(__dir, "dist/public"),
     emptyOutDir: true,
   },
 });
