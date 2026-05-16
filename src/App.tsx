@@ -18,6 +18,7 @@ import { Switch, Route, Router as WouterRouter } from "wouter";
   import { Intro } from "@/components/ui/Intro";
   import { CookieBanner } from "@/components/ui/CookieBanner";
   import { InstallPrompt } from "@/components/ui/InstallPrompt";
+  import { ScrollProgress } from "@/components/ui/ScrollProgress";
 
   import { useEffect } from "react";
 
@@ -71,6 +72,7 @@ import { Switch, Route, Router as WouterRouter } from "wouter";
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
           <ServiceWorkerRegistrar />
+          <ScrollProgress />
           <Cursor />
           <Intro />
           <AmbientBackground />
