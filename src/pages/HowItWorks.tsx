@@ -29,7 +29,7 @@ const steps = [
   {
     num: "05",
     title: "Your Inner Map builds patterns you've never seen",
-    body: "Over days and weeks, Orvyn surfaces what keeps coming up, what's shifting, and what's lifting. You'll recognize things about yourself that were always there — just invisible.",
+    body: "Over days and weeks, Orvyn surfaces what keeps coming up, what's shifting, and what's lifting. You'll recognize things about yourself that were always there, just invisible.",
     tip: "Visible progress, not promises",
   },
   {
@@ -52,7 +52,7 @@ export default function HowItWorks() {
           </h1>
           <div className="w-12 h-px bg-[#8a7a64] mb-8" />
           <p className="text-white/55 leading-relaxed text-base">
-            From your first word to your Inner Map — here's exactly what happens, and why it's different from anything you've tried before.
+            From your first word to your Inner Map. Here's exactly what happens, and why it's different from anything you've tried before.
           </p>
         </div>
       </section>
