@@ -13,7 +13,6 @@ export function Hero() {
 
     setSessionState("generating");
     
-    // Simulate generation
     setTimeout(() => {
       setSessionState("result");
     }, 2500);
@@ -30,7 +29,7 @@ export function Hero() {
         
         <ScrollReveal delay={0}>
           <p className="text-xs uppercase tracking-widest text-accent mb-8" data-testid="hero-eyebrow">
-            AI-powered wellness · Personalized to this moment
+            Orvyn wellness · Personalized to this moment
           </p>
         </ScrollReveal>
         
@@ -42,7 +41,7 @@ export function Hero() {
         
         <ScrollReveal delay={200}>
           <p className="max-w-[540px] mx-auto text-lg text-white/60 mb-16 leading-relaxed" data-testid="hero-subcopy">
-            Orvyn listens to whatever you bring — one word, one thought, your whole week. A guided session is built precisely for this moment. Not a library. Yours.
+            Orvyn listens to whatever you bring. One word, one thought, your whole week. A guided session is built precisely for this moment. Not a library. Yours.
           </p>
         </ScrollReveal>
 
