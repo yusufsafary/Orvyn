@@ -2,9 +2,9 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
+import { fileURLToPath } from "url";
 
-// import.meta.dirname is available in Node 21.2+ (ESM-safe replacement for __dirname)
-const __dir = import.meta.dirname;
+const __dir = path.dirname(fileURLToPath(import.meta.url));
 const workspaceRoot = path.resolve(__dir, "../..");
 
 export default defineConfig({
