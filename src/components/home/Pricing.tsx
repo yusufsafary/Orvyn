@@ -59,7 +59,7 @@ export function Pricing() {
           </h2>
           <div className="w-12 h-px bg-[#8a7a64] my-8" />
           <p className="text-white/50 leading-relaxed max-w-[480px]">
-            No flat subscription to a library you'll barely touch. Credits for sessions. Rolls over. Cancel anytime. Free to begin — no card required.
+            No flat subscription to a library you'll barely touch. Credits for sessions. Rolls over. Cancel anytime. Free to begin, no card required.
           </p>
         </ScrollReveal>
 
