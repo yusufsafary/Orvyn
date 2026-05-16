@@ -1,0 +1,10 @@
+{
+  "buildCommand": "pnpm run typecheck:libs && pnpm --filter @workspace/orvyn run build",
+  "outputDirectory": "artifacts/orvyn/dist/public",
+  "installCommand": "pnpm install --frozen-lockfile",
+  "framework": null,
+  "env": {
+    "PORT": "3000",
+    "BASE_PATH": "/"
+  }
+}
