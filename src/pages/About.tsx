@@ -30,7 +30,7 @@ export default function About() {
                   Existing apps give you a library. You browse. You pick something that sounds vaguely right. You sit down with a session recorded for nobody in particular.
                 </p>
                 <p>
-                  What you actually needed — in that exact moment, with that specific thing on your mind — was a guide who could meet you exactly where you were.
+                  What you actually needed, in that exact moment, with that specific thing on your mind, was a guide who could meet you exactly where you were.
                 </p>
                 <p>
                   That guide didn't exist. So we built it.
@@ -46,20 +46,20 @@ export default function About() {
               <div>
                 <h2 className="font-serif text-3xl text-white font-light mb-4">The insight</h2>
                 <p>
-                  The most powerful thing you can do for another person is to meet them exactly where they are — not where you think they should be, and not somewhere comfortable for you.
+                  The most powerful thing you can do for another person is to meet them exactly where they are. Not where you think they should be. Not somewhere comfortable for you.
                 </p>
                 <p>
                   That's what good therapy does. That's what a trusted friend does at 2am. And that's what technology, until recently, couldn't do at all.
                 </p>
                 <p>
-                  Orvyn changes that. Share what you're carrying — in any language, at any length — and receive a guided session built from your exact words. The voice. The pacing. The imagery. All of it shaped for this moment alone.
+                  Orvyn changes that. Share what you're carrying, in any language, at any length, and receive a guided session built from your exact words. The voice. The pacing. The imagery. All of it shaped for this moment alone.
                 </p>
               </div>
 
               <div>
                 <h2 className="font-serif text-3xl text-white font-light mb-4">The mission</h2>
                 <p>
-                  Orvyn exists to give every person access to a guide that speaks to their exact moment — not a library assembled for the average person.
+                  Orvyn exists to give every person access to a guide that speaks to their exact moment. Not a library assembled for the average person.
                 </p>
                 <p>
                   We believe that wellness is not a product you consume. It's a practice you build. And a practice that's shaped to you will always be more effective than one shaped for everyone.
@@ -69,7 +69,7 @@ export default function About() {
               <div>
                 <h2 className="font-serif text-3xl text-white font-light mb-4">The team</h2>
                 <p>
-                  We're a team of eight — engineers, licensed therapists, sound designers, and AI researchers. We are not a wellness brand with an AI feature. We're an AI team that takes wellness seriously enough to involve therapists in every design decision.
+                  We're a team of eight, including engineers, licensed therapists, sound designers, and AI researchers. We are not a wellness brand with an AI feature. We're an AI team that takes wellness seriously enough to involve therapists in every design decision.
                 </p>
                 <p>
                   Our therapists review session structures. Our sound designers shape every audio element. Our engineers obsess over the 30 seconds between your words and your session.
