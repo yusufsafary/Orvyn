@@ -16,8 +16,22 @@ import { Footer } from "@/components/layout/Footer";
 import { Cursor } from "@/components/ui/Cursor";
 import { Intro } from "@/components/ui/Intro";
 import { CookieBanner } from "@/components/ui/CookieBanner";
+import { InstallPrompt } from "@/components/ui/InstallPrompt";
+
+import { useEffect } from "react";
 
 const queryClient = new QueryClient();
+
+function ServiceWorkerRegistrar() {
+  useEffect(() => {
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/sw.js").catch(() => {});
+      });
+    }
+  }, []);
+  return null;
+}
 
 function Router() {
   return (
@@ -54,6 +68,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <ServiceWorkerRegistrar />
         <Cursor />
         <Intro />
         <AmbientBackground />
@@ -61,6 +76,7 @@ function App() {
           <Router />
         </WouterRouter>
         <CookieBanner />
+        <InstallPrompt />
         <Toaster />
       </TooltipProvider>
     </QueryClientProvider>
