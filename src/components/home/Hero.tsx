@@ -47,7 +47,6 @@ import { useState, useRef, useEffect } from "react";
 
   // ── Breathing guide dot ────────────────────────────────────────────────────
   function BreathingDot() {
-    // 4-2-6-2 pattern (inhale-hold-exhale-hold) = 14s cycle
     return (
       <div className="flex items-center gap-2.5 mt-3" aria-hidden>
         <span
@@ -88,6 +87,34 @@ import { useState, useRef, useEffect } from "react";
     return "This is ready. Whenever you are.";
   }
 
+  // ── X (Twitter) Card ──────────────────────────────────────────────────────
+  function XCard() {
+    return (
+      <a
+        href="https://x.com/orvynlab"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-3 bg-[#161619] border border-white/10 hover:border-white/25 px-4 py-2.5 transition-all duration-300 group mb-8"
+        aria-label="Follow Orvyn on X"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          className="w-4 h-4 fill-white/70 group-hover:fill-white transition-colors duration-200 flex-shrink-0"
+          aria-hidden="true"
+        >
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.261 5.636 5.903-5.636Zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+        </svg>
+        <span className="text-xs text-white/50 group-hover:text-white/80 transition-colors duration-200 tracking-wide">
+          @orvynlab
+        </span>
+        <span className="text-[0.6rem] uppercase tracking-widest text-white/25 group-hover:text-white/50 transition-colors duration-200">
+          Follow
+        </span>
+      </a>
+    );
+  }
+
   // ── Main Hero ─────────────────────────────────────────────────────────────
   export function Hero() {
     const [inputText, setInputText]     = useState("");
@@ -124,6 +151,10 @@ import { useState, useRef, useEffect } from "react";
         <FloatingWords />
 
         <div className="max-w-[920px] w-full mx-auto px-6 text-center relative z-10">
+
+          <ScrollReveal delay={0}>
+            <XCard />
+          </ScrollReveal>
 
           <ScrollReveal delay={0}>
             <p className="text-xs uppercase tracking-widest text-accent mb-8" data-testid="hero-eyebrow">
@@ -292,4 +323,3 @@ import { useState, useRef, useEffect } from "react";
       </section>
     );
   }
-  
