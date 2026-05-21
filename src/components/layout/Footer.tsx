@@ -30,7 +30,7 @@ export function Footer() {
             <h4 className="text-sm font-medium text-white mb-2">Company</h4>
             <Link href="/about" className="text-sm text-white/50 hover:text-white transition-colors">About</Link>
             <a href="#" className="text-sm text-white/50 hover:text-white transition-colors">Blog</a>
-            <a href="#" className="text-sm text-white/50 hover:text-white transition-colors">Careers</a>
+            <a href="#" className="text-white/50 hover:text-white transition-colors">Careers</a>
             <a href="mailto:hello@orvyn.id" className="text-sm text-white/50 hover:text-white transition-colors">hello@orvyn.id</a>
           </div>
           
@@ -42,6 +42,12 @@ export function Footer() {
           </div>
         </div>
         
+        <div className="flex justify-center mb-6">
+          <a href="https://orynth.dev/projects/orvyn" target="_blank" rel="noopener noreferrer">
+            <img src="https://orynth.dev/api/badge/orvyn?theme=light&style=default" alt="Featured on Orynth" width="260" height="80" />
+          </a>
+        </div>
+
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 gap-4">
           <p className="text-xs text-white/30">© 2026 Orvyn. All rights reserved. orvyn.id</p>
           <div className="flex gap-4 text-xs text-white/30">
